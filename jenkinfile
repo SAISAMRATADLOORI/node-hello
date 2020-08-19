@@ -5,7 +5,9 @@ pipeline{
             stage('Build'){
                 steps {
                     echo "this is a build"
-                    sh 'npm start'
+                    sh 'node server'
+
+                    
                 }
             }
         }
